@@ -3,7 +3,7 @@ title: Gate
 role: 'Designer, Programmer'
 date: 2019-11-13T10:21:46.957Z
 subtitle: Objet manifeste contre le tracking
-cover: /assets/profile.jpg
+cover: /assets/dsc_52932.jpg
 tags: 'design, tracking, web'
 align: left
 galleryImages:
