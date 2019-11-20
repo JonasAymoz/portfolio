@@ -2,7 +2,12 @@ const { generateFileList } = require('./src/crawler');
 const { join } = require('path');
 const fs = require('fs');
 
+// fetch all blogs files
 const [blogs] = generateFileList(join(__dirname, 'content')).nodes;
+
+//fetch all project files
+const portfolio = generateFileList(__dirname+ '/content/projet');
+
 module.exports = () => {
 	const pages = [
 		{
@@ -19,6 +24,11 @@ module.exports = () => {
 	pages.push({
 		url: '/blogs/',
 		data: blogs
+	});
+
+	pages.push({
+		url: '/portfolio/',
+		data: portfolio
 	});
 
 	// adding all blog pages

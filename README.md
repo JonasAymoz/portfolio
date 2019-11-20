@@ -1,6 +1,11 @@
-# blog
+Portfolio Test with NEtlify CMS & some eact front end
+----------
 
-## CLI Commands
+USe preact Cli
+https://github.com/preactjs/preact-cli/blob/master/README.md
+
+And some 
+
 
 ``` bash
 # install dependencies

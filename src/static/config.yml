@@ -23,8 +23,18 @@ collections:
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string"}
-      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Role", name: "role", widget: "string"}
+      - { label: "Date", name: "date", widget: "date", format : 'MM YY' }
       - { label: "Subtitle", name: "subtitle", widget: "string"}
       - { label: "Cover", name: "cover", widget: "image"}
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown"}
+      - label: "Align Content"
+        name: "align"
+        widget: "select"
+        default : ["center"]
+        options: ["left", "center", "right"]
+      - label: "Gallery"
+        name: "galleryImages"
+        widget: "list"
+        field: {label: Image, name: image, widget: image}
